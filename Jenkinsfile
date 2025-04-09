@@ -34,6 +34,7 @@ pipeline {
                 sh '''
                     #test -f build/index.html
                     npm test
+                    npm config set strict-ssl false
                 '''
             }
         }
